@@ -1,6 +1,6 @@
 [package]
 name = "astra-num"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Davood Hakimi Mood / David Mood <[email protected]>"]
 description = "A wrapper lib around num_bigint, num_integer, and num_traits with extra utilities for handling incredibly large (astronomical) values."
