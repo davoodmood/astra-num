@@ -97,7 +97,7 @@ impl BigNum {
         BigNum(BigInt::from_bytes_le(Sign::Plus, bytes))
     }
 
-    /// Converts this [`BigNum`] into a tuple of (Sign, Vec<u8>) in little-endian byte order.
+    /// Converts this [`BigNum`] into a tuple of (Sign, `Vec<u8>`) in little-endian byte order.
     pub fn to_bytes_le(&self) -> (Sign, Vec<u8>) {
         self.0.to_bytes_le()
     }
