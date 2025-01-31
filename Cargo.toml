@@ -1,0 +1,28 @@
+[package]
+name = "astra-num"
+version = "0.1.0"
+edition = "2021"
+authors = ["Davood Hakimi Mood / David Mood <[email protected]>"]
+description = "A wrapper lib around num_bigint, num_integer, and num_traits with extra utilities for handling incredibly large (astronomical) values."
+license = "MIT"
+repository = "https://github.com/davoodmood/astra-num" 
+homepage = "https://github.com/davoodmood/astra-num"
+documentation = "https://docs.rs/astra-num" 
+keywords = ["bigint", "bignum", "wrapper"]
+categories = ["algorithms", "cryptography", "science"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+num-rational = "0.4.1"
+num-bigint = { version = "0.4.4", features = ["serde"] }
+num-integer = "0.1.46"
+num-traits = "0.2.18" 
+serde = { version = "1.0", features = ["derive"] }
+rand = "0.8"   # Only if you want the crypto_utils feature
+
+
+[features]
+crypto_utils = []
+default = []
